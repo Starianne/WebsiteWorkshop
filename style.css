@@ -36,17 +36,18 @@ body{
 
 #setupGuidesOuter {
     justify-content: center;
+    justify-items: center;
     align-items: center;
-    display: flexbox;
+    display: grid;
     padding: 20px;
 }
 
 #startLearn {
     justify-content: center;
     align-items: center;
-    display: flexbox;
+    display: grid;
+    justify-items: center;
 }
-
 
 
 .newPage {
@@ -65,4 +66,8 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+#smallHeading h2{
+    font-size: larger;
 }
