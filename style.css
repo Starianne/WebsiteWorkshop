@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "cornella";
+    src: url(./cornella-Regular.otf) format("opentype");
+}
+
+*{
+    font-family: "cornella";
+}
+
+
 body{
     background-color: rgb(252, 255, 215);
 }
@@ -25,6 +35,12 @@ body{
     padding: 50px;
     background-color: #ffffff;
     font-size: 25px;
+}
+
+#inactive {
+    background-color: #a5a5a5;
+    color: #565656;
+    cursor: default;
 }
 
 #setupGuides {
@@ -59,6 +75,7 @@ body{
     background-color: white;
     box-shadow: 5px -5px 60px 0px #eea332;
     margin: 50px;
+    cursor: pointer;
 }
 
 #smallHeading {
