@@ -12,6 +12,11 @@ body{
     background-color: rgb(252, 255, 215);
 }
 
+img {
+    max-height: 500px;
+}
+/* home page style */
+
 #heading{
     justify-content: center;
     align-items: center;
@@ -87,4 +92,42 @@ body{
 
 #smallHeading h2{
     font-size: larger;
+}
+
+/* guide style */
+
+.guideOuter {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+
+.jumpTo li {
+    list-style-type: none;
+}
+
+.home li {
+    list-style-type: none;
+}
+
+.navigation {
+    width: 30%;
+}
+.guide {
+    width: 70%;
+}
+
+.column {
+    float: left;
+}
+
+@media screen and (max-width: 750px) {
+  .column {
+    width: 100%;
+  }
+  
+  .jumpTo {
+    display: none;
+  }
 }

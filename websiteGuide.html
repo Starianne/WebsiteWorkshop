@@ -7,141 +7,141 @@
         <title>Website Guide</title>
     </head>
     <body>
-        <div>
-            <div>
-                <h1>Making your first website</h1>
+        <div class="guideOuter">
+            <div class="guide" class="column">
+                <div>
+                    <h1>Making your first website</h1>
+                </div>
+                <div>
+                    <p>Well done on taking this first step! <br/> This guide is going to teach you the basics of building a website, and how to deploy it so that other people can see it, for free!</p>
+                </div>
+                <div id="1"> 
+                    <h1>Starting up</h1>
+                </div>
+                <div class="content">
+                    <h2>Making your first file</h2>
+                    <p>Now that you have a repository, you can make your first file: </p>
+                    <img src="./addNewFile.png" alt="an image of vs code, with the cursor hovered over the new file icon"/>
+                    <p>Press the icon and make a new file with the title "title.html", in this case, I will name it home.html</p>
+                    <img src="./createNewFile.png" alt="an empty vscode file named home.html"/>
+                    <p>Next we will add some Elements into the file:</p>
+                    <ul>
+                        <li>a &lt;!DOCTYPE html&gt; element</li>
+                        <li>a &lt;html lang="en"&gt; element</li>
+                        <li>a &lt;head&gt; element containing a &lt;meta charset="UTF-8"/&gt; element, a &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt; element, and a &lt;title&gt; element</li>
+                        <li>a &lt;body&gt; element</li>
+                    </ul>
+                    <img src="./addBaseTags.png" alt="a vs code file with the previously mentioned Elements in"/>
+                    <p>The &lt;!DOCTYPE html&gt; element will define the Html file, so that the browser knows that this is a html file</p>
+                    <p>The &lt;html lang="en"&gt; element will say that the language is english</p>
+                    <p>The &lt;head&gt; element contains information and linked files that help the page run</p>
+                    <p>The &lt;meta charset="UTF-8"/&gt; element says we are using the "UTF-8" character set so that the text we want to show up on the site will display properely</p>
+                    <p>The &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt; element will make the website show up on the whole screen.</p>
+                    <p>The &lt;body&gt; element will contain other Elements the contain the actual information the page shows you</p>
+                    <br/>
+                    <p>Next, we will go look at some website basics and the other Elements we will be using to build our site.</p>
+                </div>
+                <div id="2"> 
+                    <h1>Website basics: </h1>
+                </div>
+                <div class="content">
+                    <p>First, we are going to go over some key terms that you will need to understand in order to build websites yourself.</p>
+                    <br/>
+                    <h2>Frontend vs Backend:</h2>
+                    <p>When someone asks you about the "Frontend" of a website, they are talking about all of the outward information we see. For example, the look of the website, the words on the page, the buttons we click, etc.</p>
+                    <p>However, the "Backend" is to do with the data moving behind the site, when you enter your data into a form and it is submitted, what the website does with the data afterwards, is the "Backend"</p>
+                    <br/>
+                    <h2>Common units:</h2>
+                    <p>When deciding the sizes of your elements, you will run into 'px', 'vh', 'vw', etc.</p>
+                    <p>The only one we are going to care about right now, is 'px' meaning pixels on your screen, this is called an 'absolute' unit, since the element will stay the same amount of pixels, no matter the screen you're on.</p>
+                    <p>If you DO want to look at the other size units out of curiosity, I thought <a href="https://www.geeksforgeeks.org/css/css-units-em-rem-px-vh-vw/">this guide</a> was pretty thorough with it.</p>
+                    <br/>
+                    <p>For colours, you have rgb, rgba, hexcodes and more.</p>
+                    <p>I'm going to use Hexcodes for this website, they will look like this #ffffff (this is white) with 6 letters and numbers that decide the colour</p>
+                    <br/>
+                    <h2>Languages: </h2>
+                    <p>Now for the Frontend, we will usually be using Html, CSS and Javascript</p>
+                    <p>There are other languages you can use, but these three are the most common so we will be focusing on these.</p>
+                    <h3>Html:</h3>
+                    <p>This stands for HyperText Markup Language</p>
+                    <p>Stores the actual data being shown on the website, people ususally call it the "bones" of a page</p>
+                    <p>It is coded with "Elements" that look like this &lt;p&gt; &lt;/p&gt;, we used them to set up our file, and we'll use them to add more stuff to our site</p>
+                    <h3>CSS:</h3>
+                    <p>This stands for Cascading Style Sheets</p>
+                    <p>This is used specifically for the look of our website, and will manipulate any html present</p>
+                    <p>You'll see it written as some html element, a class, or id (we'll talk about these two later) and underneath a pair of { } with features inside, each of these features will have a colon after the feature and a semi-colon after the colour or size</p>
+                    <p>Here's an example of some used on this website, as I was building it:</p>
+                    <img src="./exampleCSS.png" alt="3 lines of code, body {background-color: rgb(252, 255, 215);}"/>
+                    <h3>Javascript:</h3>
+                    <p>Now, javascript can be used for Backend as well, but we won't be making a website with backend for this project, and I also don't use it as a Backend language, so I don't feel qualified to teach it</p>
+                    <p>Javascript can be used for the logic of your sites, want to make a timer and need to change the number with every second? You can make a loop with Js!</p>
+                    <p>You can use it to make elements appear at certain times, make it pass data to a backend safely, and it's relatively simple!</p>
+                    <p>It will look a little like this:</p>
+                    <img src="./exampleJS.png" alt="JS code with let openBtn = document.getElementById('open-btn'); let modalContainer = document.getElementById('modal-container'); let closeBtn = document.getElementById('close-btn'); openBtn.addEventListener('click', function() { modalContainer.style.display = 'block'; });"/>
+                    <br/>
+                    <p>Now, we are going to look at a few Elements and then add our own</p>
+                </div>
+                <div id="3"> 
+                    <h1>Html elements: </h1>
+                </div>
+                <div class="content">
+                    <h2>Header Elements:</h2>
+                    <p>The header Elements are a group of Elements that have a h(a number between 1-6) that contain text and will have a larger size by default, the smaller the number</p>
+                    <p> For example:</p>
+                    <ul>
+                        <li>
+                            <h1>This is a &lt;h1&gt; element</h1>
+                        </li>
+                        <li>
+                            <h2>This is a &lt;h2&gt; element</h2>
+                        </li>
+                        <li>
+                            <h3>This is a &lt;h3&gt; element</h3>
+                        </li>
+                        <li>
+                            <h4>This is a &lt;h4&gt; element</h4>
+                        </li>
+                        <li>
+                            <h5>This is a &lt;h5&gt; element</h5>
+                        </li>
+                        <li>
+                            <h6>This is a &lt;h6&gt; element</h6>
+                        </li>
+                    </ul>
+                    <br/>
+                    <p>You'll use these alongside paragraph Elements</p>
+                    <br/>
+                    <h2>Paragraph Elements:</h2>
+                    <p>This element is, by default, the same size as the h4 element, at a font size of 16px.</p>
+                    <p>You will use these everywhere for text, 50% of this page is in paragraph Elements</p>
+                    <p>It looks like this: &lt;p&gt; some text &lt;/p&gt;</p>
+                    <br/>
+                    <h2>And more: </h2>
+                    <p>There are many many Elements in this big wide world, and too many to list here.</p>
+                    <p>So, instead I will add a link to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements">MDN docs</a>, which contain literally everything when it comes to making websites, and you should look at this if you're stuck later</p>
+                </div>
+                <div id="4"> 
+                    <h1>The bones of our page: </h1>
+                </div>
+                <div class="content">
+                    
+                </div>
             </div>
-            <div>
-                <p>Well done on taking this first step! <br/> This guide is going to teach you the basics of building a website, and how to deploy it so that other people can see it, for free!</p>
-            </div>
-            <div id="1"> 
-                <h1>Starting up</h1>
-            </div>
-            <div class="content">
-                <h2>Making your first file</h2>
-                <p>Now that you have a repository, you can make your first file: </p>
-                <img src="./addNewFile.png" alt="an image of vs code, with the cursor hovered over the new file icon"/>
-                <p>Press the icon and make a new file with the title "title.html", in this case, I will name it home.html</p>
-                <img src="./createNewFile.png" alt="an empty vscode file named home.html"/>
-                <p>Next we will add some Elements into the file:</p>
-                <ul>
-                    <li>a &lt;!DOCTYPE html&gt; element</li>
-                    <li>a &lt;html lang="en"&gt; element</li>
-                    <li>a &lt;head&gt; element containing a &lt;meta charset="UTF-8"/&gt; element, a &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt; element, and a &lt;title&gt; element</li>
-                    <li>a &lt;body&gt; element</li>
-                </ul>
-                <img src="./addBaseelements.png" alt="a vs code file with the previously mentioned Elements in"/>
-                <p>The &lt;!DOCTYPE html&gt; element will define the Html file, so that the browser knows that this is a html file</p>
-                <p>The &lt;html lang="en"&gt; element will say that the language is english</p>
-                <p>The &lt;head&gt; element contains information and linked files that help the page run</p>
-                <p>The &lt;meta charset="UTF-8"/&gt; element says we are using the "UTF-8" character set so that the text we want to show up on the site will display properely</p>
-                <p>The &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt; element will make the website show up on the whole screen.</p>
-                <p>The &lt;body&gt; element will contain other Elements the contain the actual information the page shows you</p>
-                <br/>
-                <p>Next, we will go look at some website basics and the other Elements we will be using to build our site.</p>
-            </div>
-            <div id="2"> 
-                <h1>Website basics: </h1>
-            </div>
-            <div class="content">
-                <p>First, we are going to go over some key terms that you will need to understand in order to build websites yourself.</p>
-                <br/>
-                <h2>Frontend vs Backend:</h2>
-                <p>When someone asks you about the "Frontend" of a website, they are talking about all of the outward information we see. For example, the look of the website, the words on the page, the buttons we click, etc.</p>
-                <p>However, the "Backend" is to do with the data moving behind the site, when you enter your data into a form and it is submitted, what the website does with the data afterwards, is the "Backend"</p>
-                <br/>
-                <h2>Common units:</h2>
-                <p>When deciding the sizes of your elements, you will run into 'px', 'vh', 'vw', etc.</p>
-                <p>The only one we are going to care about right now, is 'px' meaning pixels on your screen, this is called an 'absolute' unit, since the element will stay the same amount of pixels, no matter the screen you're on.</p>
-                <p>If you DO want to look at the other size units out of curiosity, I thought <a href="https://www.geeksforgeeks.org/css/css-units-em-rem-px-vh-vw/">this guide</a> was pretty thorough with it.</p>
-                <br/>
-                <p>For colours, you have rgb, rgba, hexcodes and more.</p>
-                <p>I'm going to use Hexcodes for this website, they will look like this #ffffff (this is white) with 6 letters and numbers that decide the colour</p>
-                <br/>
-                <h2>Languages: </h2>
-                <p>Now for the Frontend, we will usually be using Html, CSS and Javascript</p>
-                <p>There are other languages you can use, but these three are the most common so we will be focusing on these.</p>
-                <h3>Html:</h3>
-                <p>This stands for HyperText Markup Language</p>
-                <p>Stores the actual data being shown on the website, people ususally call it the "bones" of a page</p>
-                <p>It is coded with "Elements" that look like this &lt;p&gt; &lt;p/&gt;, we used them to set up our file, and we'll use them to add more stuff to our site</p>
-                <h3>CSS:</h3>
-                <p>This stands for Cascading Style Sheets</p>
-                <p>This is used specifically for the look of our website, and will manipulate any html present</p>
-                <p>You'll see it written as some html element, a class, or id (we'll talk about these two later) and underneath a pair of { } with features inside, each of these features will have a colon after the feature and a semi-colon after the colour or size</p>
-                <p>Here's an example of some used on this website, as I was building it:</p>
-                <img src="./exampleCSS.png" alt="3 lines of code, body {background-color: rgb(252, 255, 215);}"/>
-                <h3>Javascript:</h3>
-                <p>Now, javascript can be used for Backend as well, but we won't be making a website with backend for this project, and I also don't use it as a Backend language, so I don't feel qualified to teach it</p>
-                <p>Javascript can be used for the logic of your sites, want to make a timer and need to change the number with every second? You can make a loop with Js!</p>
-                <p>You can use it to make elements appear at certain times, make it pass data to a backend safely, and it's relatively simple!</p>
-                <p>It will look a little like this:</p>
-                <img src="./exampleJS.png" alt="JS code with let openBtn = document.getElementById('open-btn'); let modalContainer = document.getElementById('modal-container'); let closeBtn = document.getElementById('close-btn'); openBtn.addEventListener('click', function() { modalContainer.style.display = 'block'; });"/>
-                <br/>
-                <p>Now, we are going to look at a few Elements and then add our own</p>
-            </div>
-            <div id="3"> 
-                <h1>elements: </h1>
-            </div>
-            <div class="content">
-                <h2>Header Elements:</h2>
-                <p>The header Elements are a group of Elements that have a h(a number between 1-6) that contain text and will have a larger size by default, the smaller the number</p>
-                <p> For example:</p>
-                <ul>
-                    <li>
-                        <h1>This is a &lt;h1&gt; element</h1>
-                    </li>
-                    <li>
-                        <h2>This is a &lt;h2&gt; element</h2>
-                    </li>
-                    <li>
-                        <h3>This is a &lt;h3&gt; element</h3>
-                    </li>
-                    <li>
-                        <h4>This is a &lt;h4&gt; element</h4>
-                    </li>
-                    <li>
-                        <h5>This is a &lt;h5&gt; element</h5>
-                    </li>
-                    <li>
-                        <h6>This is a &lt;h6&gt; element</h6>
-                    </li>
-                </ul>
-                <br/>
-                <p>You'll use these alongside paragraph Elements</p>
-                <br/>
-                <h2>Paragraph Elements:</h2>
-                <p>This element is, by default, the same size as the h4 element, at a font size of 16px.</p>
-                <p>You will use these everywhere for text, 50% of this page is in paragraph Elements</p>
-                <p>It looks like this: &lt;p&gt; some text &lt;p/&gt;</p>
-                <br/>
-                <h2>And more: </h2>
-                <p>There are many many Elements in this big wide world, and too many to list here.</p>
-                <p>So, instead I will add a link to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements">MDN docs</a>, which contain literally everything when it comes to making websites, and you should look at this if you're stuck later</p>
-            </div>
-            <div id="4"> 
-                <h1>The bones of our page: </h1>
-            </div>
-            <div class="content">
-                
+            <div class="navigation" class="column">
+                <div class="home">
+                    <ul>
+                        <li><a href="./home.html">go back home</a></li>
+                    </ul>
+                </div>
+                <div class="jumpTo">
+                    <ul>
+                        <li>Starting up</li>
+                        <li>The basic Elements</li>
+                        <li>Html Elements</li>
+                        <li>The bones of our page</li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-        <div class="navigation">
-            <div class="home">
-                <ul>
-                    <li><a href="./home.html">go back home</a></li>
-                </ul>
-                
-            </div>
-            <div class="jumpTo">
-                <ol>
-                    <li>Starting up</li>
-                    <li>The basic Elements</li>
-                </ol>
-            </div>
-            
-        </div>
-
     </body>
 </html>
