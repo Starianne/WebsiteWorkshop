@@ -113,6 +113,8 @@ img {
 
 .navigation {
     width: 30%;
+    display: flexbox;
+    float: inline-end;
 }
 .guide {
     width: 70%;
@@ -126,7 +128,7 @@ img {
   .column {
     width: 100%;
   }
-  
+
   .jumpTo {
     display: none;
   }
