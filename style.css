@@ -164,18 +164,16 @@ html {
     height: 50px;
     position: fixed;
     z-index: 1;
-    align-content: baseline;
+    align-content: center;
     display: flex;
   }
 
 
   .guide {
     padding-top: 60px;
-    margin-left: 0;
-  }
-
-  .guide div {
+    margin-left: -5%;
     width: 100vw;
+    overflow-x: auto;
   }
 
 }
