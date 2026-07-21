@@ -17,6 +17,11 @@ body{
     background-color: #fcffd7;
 }
 
+::selection {
+    background-color: #d6860f;
+    color: #fcffd7;
+}
+
 img {
     max-height: 500px;
     height: auto;
@@ -61,6 +66,8 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     display: flex;
     padding: 20px;
+    text-decoration: underline;
+    text-decoration-color: #eea332;
 }
 
 #heading h1{
@@ -68,17 +75,6 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 100px;
     font-size: 100px;
     color: #000000;
-}
-.outlinedOuter {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.outlined {
-    padding: 50px;
-    background-color: #ffffff;
-    font-size: 25px;
 }
 
 #inactive {
@@ -169,9 +165,17 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
-.navigation .home a{
+.navigation a:hover {
+    color: #000000;
+}
+
+.navigation .home a {
     color: #2c2c2c;
     font-size: larger;
+}
+
+.navigation .home a:hover {
+    text-decoration: underline;
 }
 
 .guide {
@@ -203,36 +207,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 750px) {
-  .column {
-    width: 100%;
-  }
+    #heading {
+        padding: 10px;
+    }
 
-  img {
-    max-width: 80vw;
-  }
+    #heading h1{
+        max-height: 60px;
+        min-height: 40px;
+        font-size: 50px;
+        color: #000000;
+    }
 
-  .jumpTo {
-    display: none;
-  }
+    #setupGuides {
+        display: grid;
+    }
+    
+    .column {
+        width: 100%;
+    }
 
-  .navigation {
-    top: 0;
-    width: 96%;
-    height: 50px;
-    position: fixed;
-    z-index: 1;
-    align-content: center;
-    justify-content: center;
-    display: inline-flex;
-  }
+    img {
+        max-width: 80vw;
+    }
+
+    .jumpTo {
+        display: none;
+    }
+
+    .navigation {
+        top: 0;
+        width: 96%;
+        height: 50px;
+        position: fixed;
+        z-index: 1;
+        align-content: center;
+        justify-content: center;
+        display: inline-flex;
+    }
 
 
-  .guide {
-    padding-top: 60px;
-    margin-left: -5%;
-    width: 100vw;
-    text-wrap: pretty; /* will have to change that later bc of ios incompatibility */
-  }
+    .guide {
+        padding-top: 60px;
+        margin-left: -5%;
+        width: 100vw;
+        text-wrap: pretty; /* will have to change that later bc of ios incompatibility */
+    }
 
 }
 
